@@ -45,6 +45,9 @@ def get_ip_info(ip=None):
 
     except Exception as e:
         print(f"[!] Failed to fetch data: {e}")
+        
+if __name__ == "__main__":
+    print_banner()
 
 def main():
     parser = argparse.ArgumentParser(description="🔍 IP Address Info Lookup (CLI Tool)")
